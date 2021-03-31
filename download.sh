@@ -34,7 +34,7 @@ elif  [ $FILE == "wing" ]; then
 elif  [ $FILE == "celeba-hq-dataset" ]; then
     URL=https://www.dropbox.com/s/f7pvjij2xlpff59/celeba_hq.zip?dl=0
     ZIP_FILE=./data/celeba_hq.zip
-    mkdir -p ./data
+    mkdir -p /content/drive/MyDrive/starganv2/dataset/data
     wget -N $URL -O $ZIP_FILE
     unzip $ZIP_FILE -d ./data
     rm $ZIP_FILE
@@ -42,7 +42,7 @@ elif  [ $FILE == "celeba-hq-dataset" ]; then
 elif  [ $FILE == "afhq-dataset" ]; then
     URL=https://www.dropbox.com/s/t9l9o3vsx2jai3z/afhq.zip?dl=0
     ZIP_FILE=./data/afhq.zip
-    mkdir -p ./data
+    mkdir -p /content/drive/MyDrive/starganv2/dataset/data
     wget -N $URL -O $ZIP_FILE
     unzip $ZIP_FILE -d ./data
     rm $ZIP_FILE
